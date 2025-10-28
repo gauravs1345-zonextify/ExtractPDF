@@ -6,6 +6,7 @@ const fs = require('fs/promises');
 const path = require('path');
 const { exec } = require('child_process');
 const getAccessToken = require('./getAccessToken');
+console.log("getAccessToken:", getAccessToken);
 
 // 1. PDF to Image Conversion
 const convertPDFToImages = async (pdfPath, outputDir) => {

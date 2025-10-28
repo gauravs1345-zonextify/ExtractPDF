@@ -1,7 +1,7 @@
 const axios = require('axios');
 const FormData = require('form-data');
 
-module.exports = async function getAccessToken() {
+async function getAccessToken() {
   try {
     const data = new FormData();
     data.append('client_id', '1000.YH35WONEKRPSK3RBWQHHZ7CHFE89NI');
@@ -23,4 +23,6 @@ module.exports = async function getAccessToken() {
     console.error("❌ Failed to fetch access token:", error.message);
     throw error;
   }
-};
+}
+
+module.exports = getAccessToken;
